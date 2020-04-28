@@ -1,6 +1,6 @@
 class Person
   
-  def initialize(hash)
-    
+  def initialize(attributes)
+    attributes.each{ |k,v| self.send(("#{k}="), value)}
   end
 end
